@@ -1,17 +1,16 @@
 ---
+#  - ジーニアス英和大辞典
+#  - ジーニアス英和第3版
+#  - ジーニアス英和第4版
+#  - ジーニアス英和第5版
+#  - ジーニアス和英第2版
+#  - ジーニアス和英第3版
 title: 大修館ジーニアス
-target:
-  - ジーニアス英和大辞典
-  - ジーニアス英和第3版
-  - ジーニアス英和第4版
-  - ジーニアス英和第5版
-  - ジーニアス和英第2版
-  - ジーニアス和英第3版
 type: EPWING
 subbook:
   - name: GENIUS
     unicode: true
-    c0xaracter-code: JISX0208
+    character-code: JISX0208
     stop-code: 0x1f090001
     narrow:
       range:
@@ -229,6 +228,3 @@ subbook:
         0xa471: '⑱'
         0xa472: '⑲'
         0xa473: '⑳'
-        0xa474:	'(21)'
-        0xa578: '(m)'
-        0xa579: '(f)'
