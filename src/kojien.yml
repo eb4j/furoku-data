@@ -1,0 +1,103 @@
+# 広辞苑第4版
+#
+# Copyright (C) 1997  Toshiyuki Miyamoto
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2, or (at your option)
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+
+# 岩波広辞苑第5版	外字定義ファイル(全漢字対応版)
+#	Author	:	hishida
+#	Date	:	Ver.2.0	2007.09.09
+#
+#	◎外字調査について
+#		使用したCD-ROMは、富士通スーパー統合辞書2001の『広辞苑第五版』です。
+#		『広辞苑』本文に現れる全角外字1675個を重点的に調査しています。
+#		漢字辞書の外字は、出現頻度が7以上の漢字を調査しています。
+#
+#		『広辞苑第5版』全角外字総数	5642個	A121-DD22
+#		------------------------------------------------------------
+#		半角外字と重複(A121-A331)	 205個
+#		未使用の外字		 	 362個
+#		「漢字辞書」のみ出現		3400個	←出現頻度7以上を調査
+#		『広辞苑』本文の外字		1675個	←全漢字を調査
+#		------------------------------------------------------------
+#
+#		Unicodeが見つけられなかった漢字は × を付記しています。
+#		CJK漢字拡張-Aの文字は (Ext-A)、CJK漢字拡張-Bの文字は (Ext-B)とコメントしています。
+#		(Ext-A)*、(Ext-B)* のように*のついた文字は、JIS2004に収録されているため、
+#		MSゴシック・明朝ver5.0やメイリオフォント環境なら表示することができます。
+#		CJK漢字拡張-A,Bの全ての文字を表示するには、MingLiU-ExtBなどのフォントが必要です。
+#
+#	◎二次使用について
+#		このファイルの一部、または全部を、自由に改変、再利用、再配布することを許可します。
+#
+
+---
+title: '広辞苑第4版'
+type: EPWING
+subbook:
+  - name: KOUJIEN
+    unicode: true
+    character-code: JISX0208
+    stop-code: 0x1f090001
+    narrow:
+      range:
+        start: 0xa121
+        end: 0xa23e
+      map:
+        # V4 is as same as V5 between 0xA121 to 0xA23E
+        0xA121: 'á'  # '\u00E1'  'a
+        0xA122: '\u00E0'  # `a
+        0xA123: '\u00E2'  # ^a
+        0xA124: '\u00E4'  # "a
+        0xA125: '\u00E3'  # ~a
+        0xA126: '\u0101'  # =a
+
+    wide:
+      range:
+        start: 0xa121
+        end: 0xdc78
+      map:
+        # same as narrow between 0xA121 to 0xA23E
+        0xA121: 'á'  # '\u00E1'  'a
+        0xA122: '\u00E0'  # `a
+        0xA123: '\u00E2'  # ^a
+        0xA124: '\u00E4'  # "a
+        0xA125: '\u00E3'  # ~a
+        0xA126: '\u0101'  # =a
+
+  - name: FUROKU
+    unicode: true
+    character-code: JISX0208
+    stop-code: 0x1f090001
+    narrow:
+      range:
+        start: 0xa121
+        end: 0xa23e
+      map:
+        0xA121: 'á'  # '\u00E1'  'a
+        0xA122: '\u00E0'  # `a
+        0xA123: '\u00E2'  # ^a
+        0xA124: '\u00E4'  # "a
+        0xA125: '\u00E3'  # ~a
+        0xA126: '\u0101'  # =a
+    wide:
+      range:
+        start: 0xa121
+        end: 0xdc78
+      map:
+        # same as narrow between 0xA121 to 0xA23E
+        0xA121: 'á'  # '\u00E1'  'a
+        0xA122: '\u00E0'  # `a
+        0xA123: '\u00E2'  # ^a
+        0xA124: '\u00E4'  # "a
+        0xA125: '\u00E3'  # ~a
+        0xA126: '\u0101'  # =a
