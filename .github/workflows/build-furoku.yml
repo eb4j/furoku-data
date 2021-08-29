@@ -9,14 +9,18 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Download and install EB4J-tools
+    - name: Download EB4J-tools
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: eb4j/eb4j-tools
+        tag: 'v2.2.2'
+        path: bin
+        file: eb-linux-x86-64-2.2.2.zip
+    - name: extract eb4j-tools
       run: |
-        curl -O https://github.com/eb4j/eb4j-tools/releases/download/v${EBVER}/eb-linux-x86-64-${EBVER}.zip
-        mkdir bin
         cd bin
-        unzip ../eb-linux-x86-64-${EBVER}.zip
-      env:
-        EBVER: 2.2.2
+        unzip eb-linux-x86-64-2.2.2.zip
+        chmod +x eb
     - name: Build furoku
       run: |
         mkdir dist
