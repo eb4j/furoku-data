@@ -88,12 +88,12 @@ subbook:
         0xa166: "'#3"
         0xa167: "'#v"
         0xa168: "'-"
-        0xa169: I
-        0xa16a: U
-        0xa16b: V
-        0xa16c: Y
-        0xa16d: l
-        0xa16e: /
+        0xa169: 'I'
+        0xa16a: 'U'
+        0xa16b: 'V'
+        0xa16c: 'Y'
+        0xa16d: 'l'
+        0xa16e: '/'
         0xa16f: ';'
 
         0xA170: '-'
