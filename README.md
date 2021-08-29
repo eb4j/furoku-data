@@ -54,7 +54,8 @@ Target                    |  Source       | Stop-code | Status
 大修館ジーニアス英和辞典第5版 | genius.yml    | yes       | Beta
 大修館ジーニアス英和辞典第4版 | genius43.yml  | yes       | Alpha
 岩波広辞苑第4版 第5版       | kojien.yml     | yes      | Alpha
-研究社英和中辞典            | chujiten.yml  | yes       |Alpha
+研究社英和中辞典            | chujiten.yml  | yes       | Pre-Alpha
+クラウン仏和辞典            | crown.yml     | yes       | Pre-Alpha
 
 
 ## Copyright and License
