@@ -37,6 +37,19 @@ jobs:
       with:
         name: release-files
         path: dist/
+    - name: Update Tag
+      if: github.ref == 'refs/heads/main'
+      run: |
+        git tag --force continuous-build ${GITHUB_SHA}
+        git push --force --tags
+    - name: Update Continuous Build Release
+      if: github.ref == 'refs/heads/main'
+      uses: johnwbyrd/update-release@v1.0.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: ${{runner.workspace}}/dist/*.zip
+        release: Continuous Build
+        tag: continuous-build
 
   release:
     name: publish on github release
