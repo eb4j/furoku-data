@@ -1,6 +1,44 @@
 # furoku-data
 EB4J  appendix/furoku data source with unicode extension
 
+## What this?
+
+This is a hint extension for EPWING dictionary look-ups.
+
+It defines `stop-code` which notify viewer where is an end of article of each entry.
+Because EPWING standard don't have a `end-of-entry` mark, it is *mandatory* for some
+use cases.
+
+It also defines `GAIJI` alternative unicode codepoints.
+
+Some viewer such as `EBVIEW` and `GoldenDict` can handle GAIJI image feature
+properly, so it can display GAIJI as bitmap images.
+
+It will bring better experience when viewers show such GAIJIs as ordinal
+unicode character.
+
+You can try `eb4j/ebviewer` simple epwing viewer application that support
+appendix/furoku definitions with unicode extension, how appendix/furoku make
+changes to behavior.
+
+
+## Specifications
+
+The appendix is EB library (in C/C++) original extension of the EPWING standard specification.
+EB4J can handle EB library's appendix features.
+
+Original definitions of appendix uses EUC-JP or ISO-8859-1 character encoding
+and character sets.
+It limits application its usable Unicode characters to display. 
+
+EB4J extends it to allow '\uXXXX' and '\UXXXXXXXX' form of unicode escape sequence.
+It does not break the original library. EB library( in C/C++) will pass it as is.
+
+EB4J provide an API to escape/unescape these strings, and EB4J automatically unescape
+these sequence into proper unicode (include surrogate-pair one) characters.
+
+EB4J-tools handle input format as in YAML. It will escape characters.
+
 ## How to use
 
 1. Install [EB4J-tools](https://github.com/eb4j/eb4j-tools)
@@ -10,13 +48,13 @@ EB4J  appendix/furoku data source with unicode extension
 
 ## Status
 
-Target                    |  Source       | Status  
-------------------------- | ------------- | --------- 
-大修館ジーニアス英和大辞典    | genius.yml    | Beta
-大修館ジーニアス英和辞典第5版 | genius.yml    | Beta
-大修館ジーニアス英和辞典第4版 | genius43.yml  | Alpha
-岩波広辞苑第4版 第5版       | kojien.yml    | Alpha
-研究社英和中辞典            | chujiten.yml  | Alpha
+Target                    |  Source       | Stop-code | Status  
+------------------------- | ------------- | --------- | ------
+大修館ジーニアス英和大辞典    | genius.yml    | yes       | Beta
+大修館ジーニアス英和辞典第5版 | genius.yml    | yes       | Beta
+大修館ジーニアス英和辞典第4版 | genius43.yml  | yes       | Alpha
+岩波広辞苑第4版 第5版       | kojien.yml     | yes      | Alpha
+研究社英和中辞典            | chujiten.yml  | yes       |Alpha
 
 
 ## Copyright and License
