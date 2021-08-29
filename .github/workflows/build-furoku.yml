@@ -1,0 +1,63 @@
+name: Build and Release
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: Run builder
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Download and install EB4J-tools
+      run: |
+        curl -O https://github.com/eb4j/eb4j-tools/releases/download/v${EBVER}/eb-linux-x86-64-${EBVER}.zip
+        mkdir bin
+        cd bin
+        unzip ../eb-linux-x86-64-${EBVER}.zip
+      env:
+        EBVER: 2.2.2
+    - name: Build furoku
+      run: |
+        mkdir dist
+        for src in genius.yml genius43.yml kojien.yml
+        do
+           target=`basename ${src} .yml`
+           mkdir ${target}
+           bin/eb appendix -o ${target} ${src}
+           zip -r dist/${target}.zip ${target}
+        done
+    - name: Upload asset
+      uses: actions/upload-artifact@v2
+      with:
+        name: release-files
+        path: dist/
+
+  release:
+    name: publish on github release
+    needs: [build]
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Download artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: release-files
+        path: distributions
+    - name: Get the version
+      id: get_version
+      run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+    - name: Create release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      id: create_release
+      with:
+        title: Release v${{ steps.get_version.outputs.VERSION }}
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        draft: false
+        prerelease: false
+        files: |
+          distributions/*.zip
+
+
+
