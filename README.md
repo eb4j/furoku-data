@@ -61,11 +61,14 @@ Target                    |  Source       | Stop-code | Status
 岩波広辞苑第4版 第5版       | kojien.yml     | yes      | Alpha
 研究社英和中辞典            | chujiten.yml  | yes       | Pre-Alpha
 クラウン仏和辞典            | crown.yml     | yes       | Pre-Alpha
-
+ビジネス技術実用英語大辞典V5 | unno5.yml      | auto      | Pre-Alpha
+ビジネス技術実用英語大辞典V6.02 | unno602.yml | auto      | Pre-Alpha
 
 ## Copyright and License
 
 Copyright (C) 1997  Toshiyuki Miyamoto
+
+Copyright (C) 1998  Motoyuki Kasahara
 
 Copyright (C) 2007  hishida
 
