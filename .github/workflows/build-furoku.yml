@@ -47,7 +47,7 @@ jobs:
       uses: johnwbyrd/update-release@v1.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        files: dist/genius.zip dist/genius43.zip dist/kojien.zip
+        files: dist/genius.zip dist/genius43.zip dist/kojien.zip dist/unno5.zip dist/unno602.zip
         release: Continuous Build
         tag: continuous-build
 
