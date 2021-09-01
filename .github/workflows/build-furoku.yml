@@ -25,7 +25,7 @@ jobs:
     - name: Build furoku
       run: |
         mkdir dist
-        for src in genius.yml genius43.yml kojien.yml
+        for src in genius.yml genius43.yml kojien.yml unno5.yml unno602.yml
         do
            target=`basename ${src} .yml`
            mkdir ${target}

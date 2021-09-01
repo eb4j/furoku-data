@@ -1,0 +1,71 @@
+---
+title: "title"
+type: "EPWING"
+subbook:
+  - name: "EIWAWAEI"
+    unicode: true
+    character-code: "JISX0208"
+    stop-code: "0x1f090001"
+    narrow:
+      range:
+        start: "0xa221"
+        end: "0xa22b"
+      map:
+        "0xA229": "ö"
+        "0xA222": "\\"
+        "0xA22B": "ñ"
+        "0xA221": "°"
+        "0xA22A": "ü"
+        "0xA224": "à"
+        "0xA223": "é"
+        "0xA226": "ê"
+        "0xA225": "è"
+        "0xA228": "ë"
+        "0xA227": "ä"
+    wide:
+      range:
+        start: "0xa122"
+        end: "0xa12b"
+      map:
+        "0xA12A": "¼"
+        "0xA123": "｠"
+        "0xA122": "｟"
+        "0xA12B": "¾"
+        "0xA127": "●"
+        "0xA126": "▶"
+        "0xA129": "½"
+        "0xA128": "✓"
+
+  - name: "YOUREI"
+    unicode: true
+    character-code: "JISX0208"
+    stop-code: "0x1f090001"
+    narrow:
+      range:
+        start: "0xa221"
+        end: "0xa22b"
+      map:
+        "0xA229": "ö"
+        "0xA222": "\\"
+        "0xA22B": "ñ"
+        "0xA221": "°"
+        "0xA22A": "ü"
+        "0xA224": "à"
+        "0xA223": "é"
+        "0xA226": "ê"
+        "0xA225": "è"
+        "0xA228": "ë"
+        "0xA227": "ä"
+    wide:
+      range:
+        start: "0xa122"
+        end: "0xa12b"
+      map:
+        "0xA12A": "¼"
+        "0xA123": "｠"
+        "0xA122": "｟"
+        "0xA12B": "¾"
+        "0xA127": "●"
+        "0xA126": "▶"
+        "0xA129": "½"
+        "0xA128": "✓"
