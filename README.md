@@ -39,7 +39,12 @@ these sequence into proper unicode (include surrogate-pair one) characters.
 
 EB4J-tools handle input format as in YAML. It will escape characters.
 
-## How to use
+## Download
+
+You can download compiled files from github release.
+
+
+## How to build
 
 1. Install [EB4J-tools](https://github.com/eb4j/eb4j-tools)
 2. Compile data from source(YAML) to furoku binary, such as    ``` eb appendix -o /tmp genius.yml```
