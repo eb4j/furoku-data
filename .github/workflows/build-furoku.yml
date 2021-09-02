@@ -13,14 +13,14 @@ jobs:
       uses: Legion2/download-release-action@v2.1.0
       with:
         repository: eb4j/eb4j-tools
-        tag: 'v2.2.2'
+        tag: 'v2.2.3'
         path: download
-        file: eb-linux-x86-64-2.2.2.zip
+        file: eb-linux-x86-64-2.2.3.zip
     - name: extract eb4j-tools
       run: |
         mkdir bin
         cd bin
-        unzip ../download/eb-linux-x86-64-2.2.2.zip
+        unzip ../download/eb-linux-x86-64-2.2.3.zip
         chmod +x eb
     - name: Build furoku
       run: |
