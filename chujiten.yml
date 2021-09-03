@@ -3,7 +3,7 @@
 title: '研究社 新英和和英中辞典'
 type: EB
 subbook:
-  - name: chujiten
+  - name: "CHUJITEN"
     unicode: true
     character-code: JISX0208
     stop-code: 0x1f090001

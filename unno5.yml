@@ -2,6 +2,7 @@
 title: "ビジネス技術実用英語大辞典Ｖ５　英和編＆和英編"
 type: "EPWING"
 subbook:
+# title: "ビジネス技術実用英語大辞典Ｖ５　英和編＆和英編"
 - name: "EIWAWAEI"
   unicode: true
   character-code: "JISX0208"
@@ -36,6 +37,7 @@ subbook:
       "0xA129": "½"
       "0xA128": "✓"
 
+# title: "用例ファイル（ビ技実用英語Ｖ５）"
 - name: "YOUREI"
   unicode: true
   character-code: "JISX0208"
