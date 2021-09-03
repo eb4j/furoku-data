@@ -1,8 +1,9 @@
 ---
-title: "６ビ技実用英語　英和・和英６０２"
+title: "ビジネス技術実用英語大辞典V6"
 type: "EPWING"
 subbook:
-- name: "EIWAWAEI"
+# title: "６ビ技実用英語　英和・和英６０２"
+- name: "EJ_602"
   unicode: true
   character-code: "JISX0208"
   stop-code:
@@ -37,7 +38,8 @@ subbook:
       "0xA129": "½"
       "0xA128": "✓"
 
-- name: "YOUREI"
+# title: "６用例ファイル（ビ技実用英語）６０２"
+- name: "YREI_602"
   unicode: true
   character-code: "JISX0208"
   stop-code:
