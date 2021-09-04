@@ -25,7 +25,7 @@ jobs:
     - name: Build furoku
       run: |
         mkdir dist
-        for src in genius.yml genius43.yml kojien.yml unno5.yml unno602.yml
+        for src in genius.yml genius43.yml kojien.yml unno5.yml unno602.yml chujiten.yml crown.yml
         do
            target=`basename ${src} .yml`
            mkdir ${target}
@@ -47,7 +47,7 @@ jobs:
       uses: johnwbyrd/update-release@v1.0.0
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        files: dist/genius.zip dist/genius43.zip dist/kojien.zip dist/unno5.zip dist/unno602.zip
+        files: dist/genius.zip dist/genius43.zip dist/kojien.zip dist/unno5.zip dist/unno602.zip dist/chujiten.zip dist/crown.zip
         release: Continuous Build
         tag: continuous-build
 

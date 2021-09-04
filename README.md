@@ -48,21 +48,21 @@ You can download compiled files from github release.
 
 1. Install [EB4J-tools](https://github.com/eb4j/eb4j-tools)
 2. Compile data from source(YAML) to furoku binary, such as    ``` eb appendix -o /tmp genius.yml```
-3. You will see furoku data, such as ```/tmp/GENIUS/data/furoku```
-4. Install furoku data to proper directory where original data placed such as `/usr/share/dict/GENIUS/data/furoku,  honmon` 
+3. You will see catalog and furoku data, such as ```/tmp/genius/catalogs```, ```/tmp/geninus/GENIUS/data/furoku```
+4. Install furoku data to proper directory where original data placed such as `/usr/share/dict/genius/appendix` 
 
 ## Status
 
-Target                    |  Source       | Stop-code | Status  
-------------------------- | ------------- | --------- | ------
-大修館ジーニアス英和大辞典    | genius.yml    | yes       | Beta
-大修館ジーニアス英和辞典第5版 | genius.yml    | yes       | Beta
-大修館ジーニアス英和辞典第4版 | genius43.yml  | yes       | Alpha
-岩波広辞苑第4版 第5版       | kojien.yml     | yes      | Alpha
-研究社英和中辞典            | chujiten.yml  | yes       | Pre-Alpha
-クラウン仏和辞典            | crown.yml     | yes       | Pre-Alpha
-ビジネス技術実用英語大辞典V5 | unno5.yml      | auto      | Pre-Alpha
-ビジネス技術実用英語大辞典V6.02 | unno602.yml | auto      | Pre-Alpha
+Target                    |  Source       | Stop-code | Status  | download
+------------------------- | ------------- | --------- | ------ | -------------------
+大修館ジーニアス英和大辞典    | genius.yml    | yes       | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/genius.zip)
+大修館ジーニアス英和辞典第5版 | genius.yml    | yes       | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/genius.zip)
+ビジネス技術実用英語大辞典V5  | unno5.yml     | auto      | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/unno5.zip)
+ビジネス技術実用英語大辞典V6.02 | unno602.yml | auto      | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/unno602.zip)
+大修館ジーニアス英和辞典第4版 | genius43.yml  | yes       | Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/genius43.zip)
+岩波広辞苑第4版 第5版       | kojien.yml     | yes      | Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/kojien.zip)
+研究社英和中辞典            | chujiten.yml  | yes       | Pre-Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/chujiten.zip)
+クラウン仏和辞典            | crown.yml     | yes       | Pre-Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/crown.zip)
 
 ## Copyright and License
 
