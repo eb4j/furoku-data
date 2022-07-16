@@ -1,93 +1,11 @@
-# furoku-data
-EB4J  appendix/furoku data source with unicode extension
+# Give Up GitHub
 
-## What this?
+This project has given up GitHub.  ([See Software Freedom Conservancy's *Give Up  GitHub* site for details](https://GiveUpGitHub.org).)
 
-This is a hint extension for EPWING dictionary look-ups.
+You can now find this project at [Codeberg.org](https://codeberg.org/miurahr/eb4j-furoku) instead.
 
-It defines `stop-code` which notify viewer where is an end of article of each entry.
-Because EPWING standard don't have a `end-of-entry` mark, it is *mandatory* for some
-use cases.
+Any use of this project's code by GitHub Copilot, past or present, is done without our permission.  We do not consent to GitHub's use of this project's code in Copilot.
 
-It also defines `GAIJI` alternative unicode codepoints.
+Join us; you can [give up GitHub](https://GiveUpGitHub.org) too!
 
-Some viewer such as `EBVIEW` and `GoldenDict` can handle GAIJI image feature
-properly, so it can display GAIJI as bitmap images.
-
-It will bring better experience when viewers show such GAIJIs as ordinal
-unicode character.
-
-You can try `eb4j/ebviewer` simple epwing viewer application that support
-appendix/furoku definitions with unicode extension, how appendix/furoku make
-changes to behavior.
-
-
-## Specifications
-
-The appendix is EB library (in C/C++) original extension of the EPWING standard specification.
-EB4J can handle EB library's appendix features.
-
-Original definitions of appendix uses EUC-JP or ISO-8859-1 character encoding
-and character sets.
-It limits application its usable Unicode characters to display. 
-
-EB4J extends it to allow '\uXXXX' and '\UXXXXXXXX' form of unicode escape sequence.
-It does not break the original library. EB library( in C/C++) will pass it as is.
-
-EB4J provide an API to escape/unescape these strings, and EB4J automatically unescape
-these sequence into proper unicode (include surrogate-pair one) characters.
-
-EB4J-tools handle input format as in YAML. It will escape characters.
-
-## Download
-
-You can download compiled files from github release.
-
-
-## How to build
-
-1. Install [EB4J-tools](https://github.com/eb4j/eb4j-tools)
-2. Compile data from source(YAML) to furoku binary, such as    ``` eb appendix -o /tmp genius.yml```
-3. You will see catalog and furoku data, such as ```/tmp/genius/catalogs```, ```/tmp/geninus/GENIUS/data/furoku```
-4. Install furoku data to proper directory where original data placed such as `/usr/share/dict/genius/appendix` 
-
-## Status
-
-Target                    |  Source       | Stop-code | Status  | download
-------------------------- | ------------- | --------- | ------ | -------------------
-大修館ジーニアス英和大辞典    | genius.yml    | yes       | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/genius.zip)
-大修館ジーニアス英和辞典第5版 | genius.yml    | yes       | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/genius.zip)
-ビジネス技術実用英語大辞典V5  | unno5.yml     | auto      | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/unno5.zip)
-ビジネス技術実用英語大辞典V6.02 | unno602.yml | auto      | Beta | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/unno602.zip)
-大修館ジーニアス英和辞典第4版 | genius43.yml  | yes       | Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/genius43.zip)
-岩波広辞苑第4版 第5版       | kojien.yml     | yes      | Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/kojien.zip)
-研究社英和中辞典            | chujiten.yml  | yes       | Pre-Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/chujiten.zip)
-クラウン仏和辞典            | crown.yml     | yes       | Pre-Alpha | [link](https://github.com/eb4j/furoku-data/releases/download/continuous-build/crown.zip)
-
-## Copyright and License
-
-Copyright (C) 1997  Toshiyuki Miyamoto
-
-Copyright (C) 1998  Motoyuki Kasahara
-
-Copyright (C) 2007  hishida
-
-Copyright (C) 2021  Hiroshi Miura
-
-This program is free software; you can redistribute it and/or modify
-it under# This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2, or (at your option)
-any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details. the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2, or (at your option)
-any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
